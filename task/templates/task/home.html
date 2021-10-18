@@ -1,0 +1,48 @@
+{% extends "task/base.html" %}
+
+{% block content  %}
+
+<!-- <form action="result" method="POST">
+    {% csrf_token %}
+
+    Enter your email : <input type="email" name="email1"><br>
+   
+    Enter your IP Address : <input path type="text" name="IP"><br>
+    <input type="submit">
+
+</form> -->
+
+<div class="content-section">
+    <form action="home" method="POST" >
+        {% csrf_token %}
+       
+            
+        {{forms.as_p}}
+
+        <!-- value : <input type="text" name="value"><br>
+            date:<input type="radio" name="select-btn" value="1" ><br>
+            email:<input type="radio" name="select-btn" value="2" ><br>
+            number:<input type="radio" name="select-btn" value="3" ><br>
+            string:<input type="radio" name="select-btn" value="4" ><br>
+            Ipaddress:<input type="radio" name="select-btn" value="5" ><br>
+            Macaddress:<input type="radio" name="select-btn" value="6" ><br>
+            CamelCase:<input type="radio" name="select-btn" value="7" ><br>
+ -->
+
+        
+            <input type="submit">
+
+          
+
+        
+        
+    </form>
+    <br><br>
+
+    <!-- <input type="text" name="output" id=""> -->
+    
+</div>
+
+{% endblock content %}
+
+
